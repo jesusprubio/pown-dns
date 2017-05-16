@@ -94,8 +94,6 @@ exports.yargs = {
     const dnsReverse = promisify(dns.reverse);
     const dnsAxfr = promisify(axfr);
 
-
-    // TODO: get from yargs
     logger.title(this.yargs.command);
 
     if (!argv.target) { throw new Error('The option "target" is mandatory'); }
